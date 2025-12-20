@@ -1,70 +1,251 @@
-# Getting Started with Create React App
+# PLM Portal Starter 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, production-ready **Product Lifecycle Management (PLM) Portal** starter template built with React, Material-UI, and Vite. Perfect for quickly bootstrapping enterprise dashboards and monitoring applications.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎯 Overview
 
-### `npm start`
+**PLM Portal Starter** is a scaffolded web application designed to accelerate development of enterprise-grade portals. It provides a clean, responsive dashboard interface with reusable components, theming support, and modern development tooling.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ✨ Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **📊 Dashboard Interface** - Pre-built grid layout with customizable widget cards
+- **🎨 Material-UI Components** - Professional UI with Google's Material Design
+- **⚡ Vite Build System** - Lightning-fast hot module replacement (HMR) and builds
+- **🔌 API Service Layer** - Ready-to-connect API wrapper for backend integration
+- **📚 Storybook Integration** - Component development and documentation
+- **🧪 Testing Setup** - Jest & React Testing Library pre-configured
+- **📱 Responsive Design** - Mobile-first approach with flexible layouts
+- **🎭 Theming Support** - Customizable Material-UI theme configuration
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏗️ Architecture
 
-### `npm run build`
+```
+plm-portal-starter/
+├── public/              # Static assets
+├── src/
+│   ├── app/            # Main application component
+│   ├── components/     # Reusable UI components
+│   │   ├── Header.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── DashboardGrid.jsx
+│   │   └── WidgetCard.jsx
+│   ├── services/       # API services and data fetching
+│   ├── theme/          # MUI theme configuration & Storybook
+│   └── main.jsx        # Application entry point
+├── package.json
+└── vite.config.js
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Core Technologies
+- **React 19.2** - Latest React with concurrent features
+- **Material-UI 5.14** - Comprehensive component library
+- **Vite 5.0** - Next-generation frontend tooling
+- **React Router 6.20** - Client-side routing
 
-### `npm run eject`
+### State & Data Management
+- **TanStack Query 4.35** - Powerful async state management
+- **Emotion** - CSS-in-JS styling solution
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Development Tools
+- **Storybook 8.0** - UI component explorer
+- **React Testing Library** - Modern testing utilities
+- **Jest DOM** - Custom Jest matchers
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+- Node.js 16+ 
+- npm or yarn package manager
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Clone the repository
+git clone https://github.com/Andrew112/Plm-portal-starter.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Navigate to project directory
+cd Plm-portal-starter
 
-### Code Splitting
+# Install dependencies
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Development
 
-### Analyzing the Bundle Size
+```bash
+# Start development server (http://localhost:5173)
+npm run dev
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Run Storybook for component development
+npm run storybook
 
-### Making a Progressive Web App
+# Run tests
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Build & Deploy
 
-### Advanced Configuration
+```bash
+# Create production build
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Preview production build locally
+npm run preview
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📊 Dashboard Features
 
-### `npm run build` fails to minify
+The starter includes a fully functional dashboard with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Widget Cards
+- **Active Devices Monitoring** - Track connected devices in real-time
+- **Incident Tracking** - 24-hour incident counter
+- **Performance Metrics** - Average response time display
+- **Utilization Stats** - System utilization percentage
+- **Alert Feed** - Recent alerts with expandable details
+
+### Navigation
+- **App Bar** - Top navigation with menu controls
+- **Sidebar** - Persistent drawer with quick links: 
+  - Overview
+  - Assets
+  - Alerts
+  - Settings
+
+---
+
+## 🔌 API Integration
+
+The project includes a service layer ready for backend connection:
+
+```javascript
+// src/services/api.js
+export const api = {
+  baseURL: process.env.VITE_API_BASE || 'https://api.example.com',
+  async fetchDashboard() {
+    // Replace with your API calls
+    return fetch(`${this.baseURL}/dashboard`)
+  }
+}
+```
+
+### Environment Variables
+Configure your API endpoint using `.env`:
+```
+VITE_API_BASE=https://your-api-endpoint.com
+```
+
+---
+
+## 🎨 Customization
+
+### Theme Configuration
+Customize the Material-UI theme in `src/theme/muiTheme.js`:
+
+```javascript
+const theme = createTheme({
+  palette: { 
+    mode: 'light', 
+    primary: { main:  '#0b5fff' } 
+  },
+  typography: { 
+    fontFamily:  'Inter, Roboto, Arial, sans-serif' 
+  }
+})
+```
+
+### Component Development
+Use Storybook for isolated component development: 
+```bash
+npm run storybook
+```
+Stories are located in `src/theme/.storybook/stories. jsx/`
+
+---
+
+## 🧪 Testing
+
+The project is configured with Jest and React Testing Library:
+
+```bash
+# Run test suite
+npm test
+
+# Run tests in watch mode
+npm test -- --watch
+```
+
+Test files are co-located with components using the `*.test.jsx` naming convention.
+
+---
+
+## 📈 Performance
+
+- **Vite HMR** - Instant hot module replacement during development
+- **Code Splitting** - Automatic route-based code splitting with React Router
+- **Tree Shaking** - Unused code elimination in production builds
+- **Web Vitals** - Performance monitoring built-in
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! This starter is designed to be extended:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📝 Use Cases
+
+This starter is ideal for: 
+
+- **Manufacturing PLM Portals** - Track production lifecycle stages
+- **Asset Management Dashboards** - Monitor equipment and resources
+- **Monitoring & Analytics Platforms** - Display KPIs and metrics
+- **Admin Panels** - Enterprise application management
+- **IoT Device Dashboards** - Connected device monitoring
+
+---
+
+## 📄 License
+
+This project is open source and available for use.
+
+---
+
+## 📬 Contact
+
+**Repository**: [Andrew112/Plm-portal-starter](https://github.com/Andrew112/Plm-portal-starter)
+
+**Created**:  December 2025
+
+---
+
+## 🎓 Learning Resources
+
+- [React Documentation](https://react.dev/)
+- [Material-UI Documentation](https://mui.com/)
+- [Vite Guide](https://vitejs.dev/guide/)
+- [TanStack Query](https://tanstack.com/query/latest)
+- [Storybook Documentation](https://storybook.js.org/)
+
+---
+
+**Ready to build your next enterprise portal?** Star ⭐ this repo and start developing! 
